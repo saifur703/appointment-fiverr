@@ -1,0 +1,342 @@
+/*=================================
+Author: Md Saifur Rahman
+Updated: 20 July, 2020
+Notes: Hand Coded for PlatformName.com
+===================================*/
+
+/*------Start Base CSS------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+body,
+html {
+  height: 100%;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 0 solid;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+.fix:before,
+.fix:after {
+  content: '';
+  display: table;
+}
+.fix:after {
+  clear: both;
+}
+/*
+======================================
+My personal tricks here
+======================================
+*/
+.sample_class li {
+  position: relative;
+}
+.sample_class li:not(:last-of-type):before {
+  position: absolute;
+  content: '\f105';
+  font-family: 'FontAwesome';
+  top: 0;
+  left: 100%;
+}
+@-moz-document url-prefix() {
+  .sample_class_area::after {
+    top: 22.8%;
+  }
+}
+/*------End Base CSS------*/
+
+
+
+body {
+  background-color: #F8F9FD;
+}
+
+.top-left.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  color: #20284e;
+}
+
+header.top-bar {
+  padding: 20px 0;
+}
+
+.top-left.page-title:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #20284e;
+  bottom: 0px;
+}
+
+.top-right.admin-area a {
+  color: #20284e;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+a.admin-profile img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.list-details,.filter-ajax-load {
+  font-size: 15px;
+  color: #acacac;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.single-doctor {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.single-doctor h4,.doctor-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.single-doctor h5 {
+  color: #acacac;
+  font-size: 14px;
+}
+
+.s-details {
+  padding: 20px 0;
+}
+a.upcoming {
+  color: #455cc9;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+a.book {
+  background: #21294F;
+  color: #fff;
+  display: inline-block;
+  padding: 7px  10px;
+  border-radius: 5px;
+  position: absolute;
+  right: -85px;
+  margin-top: -8px;
+  text-transform: uppercase;
+}
+
+.appointment-action.s-details {
+  position: relative;
+}
+
+.single-doctor {
+  border-radius: 10px;
+  position: relative;
+  z-index:1;
+  background-color:#F8F9FD;
+}
+
+.single-doctor:after {
+  position: absolute;
+  height: 100%;
+  content:"";
+  width: calc(100% - 40px);
+  left:0;
+  top:0;
+  background:#fff;
+  z-index:-1;
+  border-radius:10px;
+}
+
+.upcoming-box {
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.upcoming-appointment-load-from-ajax {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+.upcoming-header {
+  margin: -30px -30px 30px;
+  background: #F4F4F6;
+  padding: 30px;
+  text-transform: capitalize;
+  
+}
+
+.upcoming-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #242424;
+}
+
+.single-list ul {list-style: none;text-align: left;margin: 20px;box-shadow: 0 0 3px 0 rgba(0,0,0,.15);padding: 30px;}
+
+.single-list ul li {
+  display: inline-block;
+  color: #656565;
+  padding-right: 40px;
+  text-align: left;
+  line-height: 1.8;
+}
+.upcoming-appointment-load-from-ajax:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,.7);
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.filter-ajax-load input,.filter-ajax-load select {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.choose-date, #time-range,.select-role,.select-location {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.text-center {
+  display: block;
+  color: #222;
+}
+
+.select-location span {
+  font-size: 14px;
+  text-transform: none;
+  display: block;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.select-location span.gps{margin-top: 10px;color:#acacac}
+.select-location {
+  position: relative;
+}
+
+.select-location i.fa {
+  position: absolute;
+  left: 23px;
+  top: 28px;
+}
+
+.select-location input {
+  padding-left: 24px;
+}
+
+.select-location span {
+  margin-top: 10px;
+}
+
+.steps .step-1, .steps .step-2 {
+  width: calc(50% - 20px );
+  float: left;
+}
+
+.steps .step-3 {
+  float: left;
+}
+
+.steps .step-design {background: #D2D2D2;color: #fff;width: 40px;height: 40px;display: inline-block;text-align: center;line-height: 40px;border-radius: 40px;font-weight: 600;}
+
+.steps .step {
+  position: relative;
+  z-index: 1;
+}
+
+.steps .step:before {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  content: "";
+  background: #D2D2D2;
+  z-index: -1;
+  top: 19px;
+}
+
+.steps .step.active:before,.steps .step.active .step-design {
+  background: #20284E;
+}
+
+.step-bar .col-lg-6 {
+  background: #fff;
+  padding:25px 70px 45px;
+  display: block;
+  border-radius: 10px;
+}
+span.step-details {
+  position: absolute;
+  bottom: -25px;
+  width: 200px;
+  text-align: center;
+  left: 0px;
+  margin-left: -80px;
+  font-weight: 600;
+}
+.close,.filter{
+  cursor: pointer;
+}
+

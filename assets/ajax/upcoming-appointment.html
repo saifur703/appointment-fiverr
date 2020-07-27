@@ -1,0 +1,52 @@
+<div class="upcoming-appointment-load-from-ajax d-flex justify-content-center align-items-center">
+    <div class="upcoming-box">
+        <div class="upcoming-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>upcoming apppointments</h3>
+                    <h4 class="doctor-name">Dr. Mehboob Rehman</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="appointment-list">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="single-list">
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i> Humberg</li>
+                            <li><i class="fa fa-file-text-o"></i> 038998</li>
+                            <li><i class="fa fa-building"></i> Conference</li>
+                            <li><i class="fa fa-clock-o"></i> Dec 13, 2020 at 9:30 Am - 10:00 AM</li>
+                        </ul>
+                    </div>
+                    <div class="single-list">
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i> Humberg</li>
+                            <li><i class="fa fa-file-text-o"></i> 038998</li>
+                            <li><i class="fa fa-building"></i> Conference</li>
+                            <li><i class="fa fa-clock-0"></i> Dec 13, 2020 at 9:30 Am - 10:00 AM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-12 d-flex justify-content-center">
+                <div class="close">Close</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    jQuery(document).ready(function ($) {
+
+        $('.close').click(function () {
+            $('.upcoming-appointment-area').empty();
+        });
+
+        $('.upcoming-appointment-load-from-ajax:before').click(function () {
+            $('.upcoming-appointment-area:before').empty();
+        });
+    });
+</script>

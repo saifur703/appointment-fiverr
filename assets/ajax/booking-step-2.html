@@ -1,0 +1,225 @@
+<style>
+    .booking-button button {
+        background: #20284E;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-area {
+        margin-top: 20px;
+    }
+
+    .time-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    button.available-time {
+        border: 1px solid #B8B8B8;
+        width: 100%;
+        background: transparent;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px 0;
+        color: #242424;
+        font-weight: 600;
+    }
+
+    .booking-date {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .booking-date i.fa {
+        margin: 0 10px;
+    }
+
+    button.available-time.disabled {
+        color: #B8B8B8;
+    }
+
+    button.available-time.selected {
+        background-color: #D4DAE6;
+    }
+
+    .back-button.booking-button button {
+        background: transparent;
+        border: 2px solid #20284E;
+        color: #20284E;
+        text-transform: capitalize;
+        margin-right: 20px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="booking-date">
+                        <i class="fa fa-angle-left"></i>
+                        Monday 20 Jul, 2020
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-3">
+                    <div class="time-selection morning-time">
+                        Morning session
+                        <div class="time-box">
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="time-selection morning-time">
+                        Afternoon session
+                        <div class="time-box">
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time">8:00 AM</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="time-selection morning-time">
+                        Evening session
+                        <div class="time-box">
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                                <div class="col-lg-6"><button class="available-time disabled">8:00 AM</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-end">
+
+                        <div class="back-button booking-button button-step-2">
+                            <button class="back">back</button>
+                        </div>
+
+                        <div class="continue-button booking-button button-step-2">
+                            <button class="continue">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    (function ($) {
+        "use strict";
+
+        jQuery(document).ready(function ($) {
+
+
+            $('button.available-time').click(function () {
+                $('button.available-time').removeClass('selected');
+                $(this).toggleClass('selected');
+            });
+            $('button.available-time.disabled').off('click').css('cursor', 'not-allowed');
+
+            $('.continue-button.button-step-2 .continue').click(function () {
+                $('.ajax-main-area-load').empty();
+                $('.ajax-main-area-load').load('assets/ajax/booking-step-3.html');
+                $('.steps .step').removeClass('active');
+                $('.steps .step-3').addClass('active');
+            });
+            $('.back-button.button-step-2 .back').click(function () {
+                $('.ajax-main-area-load').empty();
+                $('.ajax-main-area-load').load('assets/ajax/booking-step-1.html');
+                $('.steps .step').removeClass('active');
+                $('.steps .step-1').addClass('active');
+            });
+        });
+
+
+        jQuery(window).on("load", function () {
+
+        });
+
+    })(jQuery);

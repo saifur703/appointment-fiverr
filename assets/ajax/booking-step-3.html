@@ -1,0 +1,175 @@
+<style>
+    .main-area {
+        margin: 20px 0;
+    }
+
+    .user-selected-details {
+        padding: 50px;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .user-selecteddoctor-details {
+        text-align: center;
+    }
+
+    .user-selecteddoctor-details h4 {
+        margin: 15px 0 5px;
+    }
+
+    .user-selecteddoctor-details h5 {
+        font-size: 16px;
+    }
+
+
+    .user-information-form {
+        padding: 50px;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .user-information-form input,
+    .user-information-form textarea {
+        color: #D4DAE6;
+        border: 1px solid #D4DAE6;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .user-information-form input:focus,
+    .user-information-form textarea:focus {
+        border-color: #20284E;
+    }
+
+    .user-selected-details-right {
+        padding: 30px 0;
+    }
+
+    .user-selected-details-right div {
+        font-weight: 600;
+    }
+
+    .booking-button button {
+        background: #20284E;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .back-button.booking-button button {
+        background: transparent;
+        border: 2px solid #20284E;
+        color: #20284E;
+        text-transform: capitalize;
+        margin-right: 20px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="user-selected-details">
+                        <div class="row ">
+                            <div class="col-lg-6">
+                                <div class="user-selecteddoctor-details">
+                                    <img src="assets/img/mehboob.jpg" alt="">
+                                    <h4 class="doctor-name">Dr. Mehboob Rehman</h4>
+                                    <h5 class="doctor-position">Physician</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="user-selected-details-right">
+                                    Your selected time:
+                                    <div class="your-selected-date"><i class="fa fa-calendar"></i> Monday 20 Jul, 2020
+                                    </div>
+
+                                    <div class="your-selected-clock"><i class="fa fa-clock-o"></i> 8:30 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="user-information-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="" id="" placeholder="First Name" required>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <input type="text" name="" id="" placeholder="Last Name" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="email" name="" id="" placeholder="Email" required>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <input type="tel" name="" id="" placeholder="Mobile" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <textarea name="" id="" cols="30" rows="10"
+                                        placeholder="Short description (optional)"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-end">
+
+                        <div class="back-button booking-button button-step-3">
+                            <button class="back">back</button>
+                        </div>
+
+                        <div class="continue-button booking-button button-step-3">
+                            <button class="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function ($) {
+        "use strict";
+
+        jQuery(document).ready(function ($) {
+
+            $('.back-button.button-step-3 .back').click(function () {
+                $('.ajax-main-area-load').empty();
+                $('.ajax-main-area-load').load('assets/ajax/booking-step-2.html');
+                $('.steps .step').removeClass('active');
+                $('.steps .step-2').addClass('active');
+            });
+        });
+
+
+        jQuery(window).on("load", function () {
+
+        });
+
+    })(jQuery);
